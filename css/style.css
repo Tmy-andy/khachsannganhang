@@ -1378,19 +1378,6 @@ section {
   .contact-item {
     padding: var(--space-md);
   }
-
-  .info-side p {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    line-height: 1.4;
-    max-height: 3.6em; /* khoảng 2 dòng */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
   
   section {
     padding: var(--space-2xl) 0;
