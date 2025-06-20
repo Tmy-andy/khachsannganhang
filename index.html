@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Khách Sạn Ngân Hàng</title>
+  <meta name="description" content="Khách Sạn Ngân Hàng Bank Hotel - Một kỳ nghỉ trọn vẹn, gần biển, thoải mái, và tự do tận hưởng theo cách riêng." />
+  <link rel="icon" href="images/logo/logo KSNH-gold.png" type="image/x-icon" />
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  <!-- Main Styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e40af">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="images/logo/logo KSNH-gold.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+          <a href="#home" class="brand">
+          <img class="logo" src="images/logo/logo KSNH-red.png" alt="Bank Hotel Logo">
+          <span>Bank Hotel</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#home">Trang Chủ</a>
+          <a href="#about">Giới Thiệu</a>
+          <a href="#vr-rooms">Phòng Nghỉ</a>
+          <a href="#gallery">Thư Viện</a>
+          <a href="#contact">Liên Hệ</a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Trang Chủ</a>
+      <a href="#about">Giới Thiệu</a>
+      <a href="#vr-rooms">Phòng Nghỉ</a>
+      <a href="#gallery">Thư Viện</a>
+      <a href="#contact">Liên Hệ</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+          <h1>Bank Hotel <br> Khách sạn Ngân hàng</h1>
+          <p>“Một kỳ nghỉ trọn vẹn – Gần biển, thoải mái, và tự do tận hưởng theo cách riêng.” </p>
+          <div class="hero-buttons">
+            <a href="#vr-rooms" class="btn btn-primary">Khám Phá Phòng</a>
+            <a href="#contact" class="btn btn-secondary">Liên Hệ Ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <h3 style="color: var(--primary-light);">Chào Mừng Đến Với</h3>
+            <h2>Khách Sạn Ngân Hàng - Bank Hotel</h2>
+            <p>Bank Hotel Vũng Tàu là khách sạn 2 sao trung tâm thành phố, cách Bãi Sau chỉ 3 phút đi bộ, mang đến chỗ ở tiện nghi với giá hợp lý, là lựa chọn lý tưởng cho du khách muốn tận hưởng biển xanh, cát trắng.</p>
+            <p>Bank Hotel hướng đến việc mang đến không gian nghỉ dưỡng hiện đại, thoải mái, phục vụ tận tâm cùng tiện ích đầy đủ, phù hợp với nhiều đối tượng khách – cam kết mang lại kỳ nghỉ đáng nhớ cho bạn.</p>
+            <div class="features">
+              <div class="feature">
+                <i class="fas fa-wifi"></i>
+                <span>Wi-Fi Miễn Phí</span>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-square-parking"></i>
+                <span>Bãi đỗ xe riêng thoải mái, khuôn viên lớn</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-utensils"></i>
+                <span>Sử dụng chỗ ngồi nhà hàng miễn phí</span>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-bowl-food"></i>
+                <span>Cho phép mang đồ ăn bên ngoài vào.</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-media" data-aos="fade-left">
+            <div class="video-container">
+              <iframe src="https://nganhanghotel.vn/wp-content/uploads/2025/04/Bank-Hotel-Video-New-2025-1.mp4" title="Giới thiệu khách sạn" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-highlight">
+        <div class="container">
+            <div class="location-wrapper">
+            <!-- Bên trái: tiêu đề -->
+            <div class="location-title" data-aos="fade-right">
+                <h1 style="color: white;">Vị trí & <br>Tham Quan</h1>
+            </div>
+
+            <!-- Bên phải: nội dung -->
+            <div class="location-info" data-aos="fade-left" data-aos-delay="100">
+                <p>
+                <strong>Bank Hotel</strong> nằm trên đường Hoàng Hoa Thám, một con đường sầm uất với nhiều nhà hàng và quán ăn ngon, thuận tiện cho việc di chuyển và khám phá Vũng Tàu.
+                </p>
+                <ul class="location-list">
+                <li><strong>Bãi Sau (Back Beach):</strong> 3 phút đi bộ</li>
+                <li><strong>Mũi Nghinh Phong:</strong> khoảng 2 km</li>
+                <li><strong>Khu du lịch cáp treo Hồ Mây:</strong> khoảng 4 km</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="vr-rooms" class="vr-room-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Các Hạng Phòng <br>Tại Bank Hotel</h2>
+        </div>
+      </div>
+      <div class="swiper vr-room-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="room-slide-wrapper">
+              <!-- VR bên trái -->
+              <div class="room-col vr-side">
+                <iframe
+                  src="https://bankhotel.vt360.vn/#media=9&yaw=-75.81&pitch=-13.88&fov=110.00"
+                  frameborder="0"
+                  allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+
+              <!-- Nội dung bên phải -->
+              <div class="room-col info-side">
+                <h3>Phòng VIP</h3>
+                <p>Có phòng khách, bàn ghế sofa. 29 m², Nhìn ra thành phố. Sức chứa 2 khách</p>
+                <ul class="room-amenities">
+                  <li><i class="fas fa-bed"></i> Giường Đôi</li>
+                  <li><i class="fas fa-bath"></i> Phòng Tắm Riêng</li>
+                  <li><i class="fas fa-wifi"></i> Wi-Fi Miễn Phí</li>
+                  <li><i class="fa-solid fa-wind"></i> Điều hòa không khí</li>
+                </ul>
+                <div class="room-bottom">
+                  <div class="room-price">
+                    <span class="price">420.000 VNĐ</span><span class="period">/đêm</span>
+                  </div>
+                  <div class="room-action">
+                    <a href="#contact" class="btn btn-primary">Liên Hệ Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- Slide khác thêm tương tự -->
+           <div class="swiper-slide">
+            <div class="room-slide-wrapper">
+              <!-- VR bên trái -->
+              <div class="room-col vr-side">
+                <iframe
+                  src="https://bankhotel.vt360.vn/#media=3&yaw=-63.57&pitch=-17.72&fov=110.00"
+                  frameborder="0"
+                  allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+
+              <!-- Nội dung bên phải -->
+              <div class="room-col info-side">
+                <h3>Phòng 3 khách - Giường đôi</h3>
+                <p>Không gian rộng rãi hơn, view đẹp, trang bị tiện nghi đầy đủ. Sức chứa 2-3 khách</p>
+                <ul class="room-amenities">
+                  <li><i class="fas fa-bed"></i> Giường Đôi</li>
+                  <li><i class="fas fa-bath"></i> Phòng Tắm Riêng</li>
+                  <li><i class="fas fa-wifi"></i> Wi-Fi Miễn Phí</li>
+                  <li><i class="fa-solid fa-wind"></i> Điều hòa không khí</li>
+                </ul>
+                <div class="room-bottom">
+                  <div class="room-price">
+                    <span class="price">1.270.000 VNĐ</span><span class="period">/đêm</span>
+                  </div>
+                  <div class="room-action">
+                    <a href="#contact" class="btn btn-primary">Liên Hệ Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide khác thêm tương tự -->
+           <div class="swiper-slide">
+            <div class="room-slide-wrapper">
+              <!-- VR bên trái -->
+              <div class="room-col vr-side">
+                <iframe
+                  src="https://bankhotel.vt360.vn/#media=4&yaw=56.49&pitch=-26.59&fov=110.00"
+                  frameborder="0"
+                  allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+
+              <!-- Nội dung bên phải -->
+              <div class="room-col info-side">
+                <h3>Phòng 3 khách - Giường đơn</h3>
+                <p>Không gian rộng rãi hơn, view đẹp, trang bị tiện nghi đầy đủ. Sức chứa 3 khách</p>
+                <ul class="room-amenities">
+                  <li><i class="fas fa-bed"></i> Giường Đơn</li>
+                  <li><i class="fas fa-bath"></i> Phòng Tắm Riêng</li>
+                  <li><i class="fas fa-wifi"></i> Wi-Fi Miễn Phí</li>
+                  <li><i class="fa-solid fa-wind"></i> Điều hòa không khí</li>
+                </ul>
+                <div class="room-bottom">
+                  <div class="room-price">
+                    <span class="price">1.270.000 VNĐ</span><span class="period">/đêm</span>
+                  </div>
+                  <div class="room-action">
+                    <a href="#contact" class="btn btn-primary">Liên Hệ Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide khác thêm tương tự -->
+           <div class="swiper-slide">
+            <div class="room-slide-wrapper">
+              <!-- VR bên trái -->
+              <div class="room-col vr-side">
+                <iframe
+                  src="https://bankhotel.vt360.vn/#media=5&yaw=-57.28&pitch=-6.70&fov=110.00"
+                  frameborder="0"
+                  allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+
+              <!-- Nội dung bên phải -->
+              <div class="room-col info-side">
+                <h3>Phòng 4 khách</h3>
+                <p>Không gian rộng rãi hơn, view đẹp, trang bị tiện nghi đầy đủ. Sức chứa 4-5 khách</p>
+                <ul class="room-amenities">
+                  <li><i class="fas fa-bed"></i> Giường Đôi</li>
+                  <li><i class="fas fa-bath"></i> Phòng Tắm Riêng</li>
+                  <li><i class="fas fa-wifi"></i> Wi-Fi Miễn Phí</li>
+                  <li><i class="fa-solid fa-wind"></i> Điều hòa không khí</li>
+                </ul>
+                <div class="room-bottom">
+                  <div class="room-price">
+                    <span class="price">1.500.000 VNĐ</span><span class="period">/đêm</span>
+                  </div>
+                  <div class="room-action">
+                    <a href="#contact" class="btn btn-primary">Liên Hệ Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide khác thêm tương tự -->
+           <div class="swiper-slide">
+            <div class="room-slide-wrapper">
+              <!-- VR bên trái -->
+              <div class="room-col vr-side">
+                <iframe
+                  src="https://bankhotel.vt360.vn/#media=7&yaw=15.82&pitch=-9.02&fov=110.00"
+                  frameborder="0"
+                  allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+
+              <!-- Nội dung bên phải -->
+              <div class="room-col info-side">
+                <h3>Phòng Gia Đình</h3>
+                <p>Không gian rộng rãi, view đẹp, trang bị tiện nghi đầy đủ. Sức chứa 7-8 khách</p>
+                <ul class="room-amenities">
+                  <li><i class="fas fa-bed"></i> Giường Đôi</li>
+                  <li><i class="fas fa-bath"></i> Phòng Tắm Riêng</li>
+                  <li><i class="fas fa-wifi"></i> Wi-Fi Miễn Phí</li>
+                  <li><i class="fa-solid fa-wind"></i> Điều hòa không khí</li>
+                </ul>
+                <div class="room-bottom">
+                  <div class="room-price">
+                    <span class="price">1.500.000 VNĐ</span><span class="period">/đêm</span>
+                  </div>
+                  <div class="room-action">
+                    <a href="#contact" class="btn btn-primary">Liên Hệ Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Pagination (tùy chọn) -->
+        <div class="swiper-pagination"></div>
+      </div>
+      
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Thư Viện Ảnh</h2>
+          <p>Khám phá vẻ đẹp của khách sạn qua hình ảnh</p>
+        </div>
+        
+        <div class="swiper gallery-swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper" id="galleryWrapper"></div>
+          
+        </div>
+        <!-- Pagination -->
+          <div class="swiper-pagination gallery-pagination"></div>
+        <!-- Navigation buttons -->
+          <div class="swiper-button-prev gallery-prev"></div>
+          <div class="swiper-button-next gallery-next"></div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightboxClose">&times;</span>
+      <div class="lightbox-content">
+        <img class="lightbox-image" id="lightboxImage" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+        <div class="lightbox-nav">
+          <div class="lightbox-prev" id="lightboxPrev">&#10094;</div>
+          <div class="lightbox-next" id="lightboxNext">&#10095;</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Maps Section -->
+    <section id="map" class="maps-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+        <h2>Vị Trí Của Chúng Tôi</h2>
+        <p>Khám phá vị trí đắc địa tại trung tâm thành phố Vũng Tàu</p>
+        </div>
+        <div class="map-frame" data-aos="zoom-in" data-aos-delay="200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d981.2732093968257!2d107.0875623!3d10.3344553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756ff7e4c0d3e7%3A0x6a60fbfbc4cb3efb!2zMTc0IMSQLiBIb8OgbmcgSG9hIFRow6FtLCBQaMaw4budbmcgVGjhuq9uZyBUYW0sIFbFqW5nIFTDoHUsIELDoCBS4buLYSAtIFbFqW5nIFTDoHUsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1750233372672!5m2!1sen!2s" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-info" data-aos="fade-right">
+          <h2>Liên Hệ Với Chúng Tôi</h2>
+          <div class="contact-details">
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Địa Chỉ</h4>
+                <p><a href="https://maps.app.goo.gl/hE1mPufhkqQojhK4A">174 Hoàng Hoa Thám, Phường 2, Vũng Tàu</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Điện Thoại</h4>
+                <p><a href="tel:+84899 852 300">0899 852 300</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto: bdcbnh@gmail.com?subject=Liên hệ từ khách&body=Xin chào Bank Hotel,">bdcbnh@gmail.com</a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Logo & Brand Section -->
+      <div class="footer-section brand-section">
+        <div class="footer-logo">
+          <img src="images/logo/logo KSNH-gold.png" alt="Bank Hotel Logo" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <h3 class="brand-name">Khách sạn Ngân hàng</h3>
+          <span class="brand-subtitle">Bank Hotel</span>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+        <h3 class="section-title">Liên Kết Nhanh</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Trang Chủ</a></li>
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#vr-rooms">Phòng Nghỉ</a></li>
+          <li><a href="#gallery">Thư Viện</a></li>
+          <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="footer-section">
+        <h3 class="section-title">Thông Tin Liên Hệ</h3>
+        <div class="contact-info">
+          <p>174 Đ. Hoàng Hoa Thám, Phường 2, Vũng Tàu</p>
+          <p>0899 852 300</p>
+          <p>bdcbnh@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p class="copyright">&copy; 2025 Khách Sạn Ngân Hàng - Bank Hotel.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/NganHangHotel/" class="social-link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
