@@ -847,7 +847,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
           shortText.classList.add('hidden');
           fullText.classList.remove('hidden');
-          btn.textContent = ' Rút gọn';
+          btn.textContent = ' Rút gọn'; 
         }
       });
     });
