@@ -586,7 +586,7 @@ document.addEventListener('mousemove', function(e) {
 });
 
 
-
+// Ẩn hiện header
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', () => {
@@ -607,7 +607,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-
+// Double click phóng to 360
 const vrWrapper = document.getElementById("vrWrapper");
 
 if (vrWrapper) {
@@ -654,17 +654,20 @@ const vrSwiper = new Swiper(".vr-room-swiper", {
   grabCursor: true,
 });
 
+// Dừng autoplay khi hover vào section chứa Swiper
 // Lấy section chứa Swiper
 const vrRoomSection = document.querySelector(".vr-room-section");
 
 if (vrRoomSection && vrSwiper) {
   vrRoomSection.addEventListener("mouseenter", () => {
+    console.log('mouseenter');
     vrSwiper.autoplay.stop();
-  });
+    });
 
-  vrRoomSection.addEventListener("mouseleave", () => {
+    vrRoomSection.addEventListener("mouseleave", () => {
+    console.log('mouseleave');
     vrSwiper.autoplay.start();
-  });
+    });
 }
 
 
