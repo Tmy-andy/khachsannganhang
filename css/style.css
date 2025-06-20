@@ -660,11 +660,21 @@ section {
 
 /* Swiper Pagination */
 .gallery-pagination {
-  bottom: 80px !important;
-  max-width: fit-content;
-  pointer-events: auto;   
-  padding: 0 var(--space-md)
+  position: absolute;
+  bottom: 20px; /* điều chỉnh theo nhu cầu */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  pointer-events: auto;
 }
+
 
 
 .gallery-pagination .swiper-pagination-bullet {
@@ -1410,6 +1420,8 @@ section {
     max-height: 100%;
     background: #eee;
     display: block;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
