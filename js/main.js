@@ -832,16 +832,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.toggle-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+    toggleButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
         const parent = this.closest('.info-side');
         const shortText = parent.querySelector('.short-text');
         const fullText = parent.querySelector('.full-text');
 
-        shortText.classList.toggle('hidden');
-        fullText.classList.toggle('hidden');
+        shortText.classList.add('hidden');
+        fullText.classList.remove('hidden');
 
-        this.textContent = fullText.classList.contains('hidden') ? 'Xem thêm' : 'Rút gọn';
+        // Đổi thành Rút gọn và xử lý ngược lại
+        if (this.textContent === 'Xem thêm') {
+          this.textContent = 'Rút gọn';
+          shortText.classList.add('hidden');
+          fullText.classList.remove('hidden');
+        } else {
+          this.textContent = 'Xem thêm';
+          shortText.classList.remove('hidden');
+          fullText.classList.add('hidden');
+        }
       });
     });
   });
