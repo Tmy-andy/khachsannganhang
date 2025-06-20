@@ -660,17 +660,35 @@ const vrRoomSection = document.querySelector(".vr-room-section");
 
 if (vrRoomSection && vrSwiper) {
   vrRoomSection.addEventListener("mouseenter", () => {
-        vrSwiper.autoplay.stop();
+    console.log('mouseenter');
+    vrSwiper.autoplay.stop();
     });
+
     vrRoomSection.addEventListener("mouseleave", () => {
-        vrSwiper.autoplay.start();
-    });
-    vrRoomSection.addEventListener("touchstart", () => {
-        vrSwiper.autoplay.stop();
-    });
-    vrRoomSection.addEventListener("touchend", () => {
+    console.log('mouseleave');
     vrSwiper.autoplay.start();
     });
+}
+
+// Kiểm tra thiết bị di động
+// Nếu là thiết bị di động, tạm dừng autoplay mỗi 20 giây khi chạm vào section
+// và khởi động lại autoplay sau 20 giây
+function isMobile() {
+  return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  let vrSwiperTimeout;
+
+  function pauseAutoplayFor20s() {
+    vrSwiper.autoplay.stop();
+    clearTimeout(vrSwiperTimeout);
+    vrSwiperTimeout = setTimeout(() => {
+      vrSwiper.autoplay.start();
+    }, 20000); // 20 giây
+  }
+
+  vrRoomSection.addEventListener("touchstart", pauseAutoplayFor20s);
 }
 
 
