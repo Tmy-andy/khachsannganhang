@@ -1599,6 +1599,32 @@ html {
   padding: 0.5rem 1.2rem;
 }
 
+.short-text,
+.full-text {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.full-text.hidden {
+  display: none;
+}
+
+.toggle-btn {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.toggle-btn:hover {
+  opacity: 0.8;
+}
+
+
 
 /* ROOM SWIPER */
 
