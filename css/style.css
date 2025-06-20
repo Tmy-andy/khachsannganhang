@@ -666,6 +666,16 @@ section {
   padding: 0 var(--space-md)
 }
 
+.gallery-pagination, .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 24px auto 0 auto; /* căn giữa theo chiều ngang */
+  position: relative; /* hoặc absolute nếu cần */
+  left: 0;
+  right: 0;
+}
 
 .gallery-pagination .swiper-pagination-bullet {
   width: 12px;
