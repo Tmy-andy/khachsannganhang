@@ -832,26 +832,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    document.querySelectorAll('.toggle-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const container = btn.closest('.room-desc');
+        const shortText = container.querySelector('.short-text');
+        const fullText = container.querySelector('.full-text');
 
-    toggleButtons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        const parent = this.closest('.info-side');
-        const shortText = parent.querySelector('.short-text');
-        const fullText = parent.querySelector('.full-text');
+        const isExpanded = !fullText.classList.contains('hidden');
 
-        shortText.classList.add('hidden');
-        fullText.classList.remove('hidden');
-
-        // Đổi thành Rút gọn và xử lý ngược lại
-        if (this.textContent === 'Xem thêm') {
-          this.textContent = 'Rút gọn';
-          shortText.classList.add('hidden');
-          fullText.classList.remove('hidden');
-        } else {
-          this.textContent = 'Xem thêm';
+        if (isExpanded) {
           shortText.classList.remove('hidden');
           fullText.classList.add('hidden');
+          btn.textContent = ' Xem thêm';
+        } else {
+          shortText.classList.add('hidden');
+          fullText.classList.remove('hidden');
+          btn.textContent = ' Rút gọn';
         }
       });
     });

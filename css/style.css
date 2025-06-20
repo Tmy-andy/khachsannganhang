@@ -1615,13 +1615,13 @@ html {
 }
 
 .toggle-btn {
-  display: inline-block;
-  font-size: 0.9rem;
   color: var(--primary);
-  cursor: pointer;
   font-weight: 600;
-  margin-bottom: 1rem;
+  cursor: pointer;
   text-decoration: underline;
+  margin-left: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .toggle-btn:hover {
