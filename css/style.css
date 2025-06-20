@@ -1423,6 +1423,12 @@ section {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+    .room-slide-wrapper {
+    gap: 4px; /* hoặc 0 nếu muốn sát hẳn */
+  }
+  .room-col.vr-side {
+    margin-bottom: 4px; /* hoặc 0 nếu muốn sát hẳn */
+  }
 }
 
 
