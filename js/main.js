@@ -832,17 +832,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-document.querySelectorAll('.toggle-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-    const parent = this.closest('.info-side');
-    const shortText = parent.querySelector('.short-text');
-    const fullText = parent.querySelector('.full-text');
+    document.querySelectorAll('.toggle-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const parent = this.closest('.info-side');
+        const shortText = parent.querySelector('.short-text');
+        const fullText = parent.querySelector('.full-text');
 
-    shortText.classList.toggle('hidden');
-    fullText.classList.toggle('hidden');
+        shortText.classList.toggle('hidden');
+        fullText.classList.toggle('hidden');
 
-    this.textContent = fullText.classList.contains('hidden') ? 'Xem thêm' : 'Rút gọn';
+        this.textContent = fullText.classList.contains('hidden') ? 'Xem thêm' : 'Rút gọn';
+      });
     });
-});
-});
+  });
 
