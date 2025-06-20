@@ -1374,15 +1374,6 @@ section {
     padding: 1rem;
   }
   
-  .room-amenities {
-    max-height: 3.5rem;
-    overflow: hidden;
-  }
-
-    .room-amenities li {
-      margin-bottom: 0.3rem;
-      font-size: 0.9rem; /* nhỏ hơn 1 chút */
-    }
 
   .contact-item {
     padding: var(--space-md);
