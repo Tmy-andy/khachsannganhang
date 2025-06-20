@@ -660,12 +660,15 @@ const vrRoomSection = document.querySelector(".vr-room-section");
 
 if (vrRoomSection && vrSwiper) {
   vrRoomSection.addEventListener("mouseenter", () => {
-    console.log('mouseenter');
-    vrSwiper.autoplay.stop();
+        vrSwiper.autoplay.stop();
     });
-
     vrRoomSection.addEventListener("mouseleave", () => {
-    console.log('mouseleave');
+        vrSwiper.autoplay.start();
+    });
+    vrRoomSection.addEventListener("touchstart", () => {
+        vrSwiper.autoplay.stop();
+    });
+    vrRoomSection.addEventListener("touchend", () => {
     vrSwiper.autoplay.start();
     });
 }
