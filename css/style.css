@@ -1328,13 +1328,12 @@ section {
   padding-top: 75%; /* 4:3 ratio */
 }
 
-.room-col.vr-side iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: 0;
+.room-col iframe {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
   display: block;
-  border-radius: 16px; /* tuỳ chọn */
+  border-radius: 16px;
 }
 
   .nav .container {
