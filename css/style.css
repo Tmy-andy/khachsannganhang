@@ -699,8 +699,7 @@ section {
   }
 
   .gallery-pagination {
-    margin-bottom: 10%;
-    margin-top: 20px;
+    align-items: center;
     padding-left: 5px;
     padding-right: 5px;
   }
