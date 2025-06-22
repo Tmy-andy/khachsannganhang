@@ -660,6 +660,10 @@ section {
 
 
 /* Swiper Pagination */
+.gallery-swiper {
+  position: relative;
+}
+
 .gallery-pagination {
   position: absolute;
   bottom: 10px; /* điều chỉnh theo nhu cầu */
@@ -675,8 +679,6 @@ section {
   z-index: 10;
   pointer-events: auto;
 }
-
-
 
 .gallery-pagination .swiper-pagination-bullet {
   width: 12px;
