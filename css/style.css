@@ -703,7 +703,9 @@ section {
   }
 
   .gallery-pagination {
-    padding: auto 10px;
+    padding-left: 10px;
+    padding-right:10px;
+    bottom: 20px;
   }
 
   .gallery-prev,
