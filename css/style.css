@@ -703,9 +703,7 @@ section {
   }
 
   .gallery-pagination {
-    padding-top: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: auto 10px;
   }
 
   .gallery-prev,
