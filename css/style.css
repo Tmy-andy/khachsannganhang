@@ -698,8 +698,11 @@ section {
     flex-direction: column;
   }
 
+  .gallery {
+    height: 500px;
+  }
+
   .gallery-pagination {
-    align-items: center;
     padding-left: 5px;
     padding-right: 5px;
   }
