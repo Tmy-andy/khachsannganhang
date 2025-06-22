@@ -669,7 +669,6 @@ section {
   bottom: 10px; /* điều chỉnh theo nhu cầu */
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -697,6 +696,10 @@ section {
   
   .gallery-swiper-wrapper {
     flex-direction: column;
+  }
+
+  .gallery-pagination {
+    margin-bottom: 40px;
   }
 
   .gallery-prev,
