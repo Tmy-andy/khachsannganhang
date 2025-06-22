@@ -665,7 +665,7 @@ section {
 }
 
 .gallery-pagination {
-  position: relative;
+  position: absolute;
   bottom: 10px; /* điều chỉnh theo nhu cầu */
   left: 50%;
   transform: translateX(-50%);
