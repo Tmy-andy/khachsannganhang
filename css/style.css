@@ -699,7 +699,9 @@ section {
   }
 
   .gallery-pagination {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .gallery-prev,
