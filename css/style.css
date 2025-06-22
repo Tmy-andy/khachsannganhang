@@ -675,7 +675,7 @@ section {
   gap: 8px;
   width: auto;
   padding: 0;
-  margin-bottom: 150px;
+  margin-bottom: 130px;
   z-index: 10;
   pointer-events: auto;
 }
@@ -694,8 +694,13 @@ section {
 }
 
 @media (max-width: 860px) {
+  
   .gallery-swiper-wrapper {
     flex-direction: column;
+  }
+
+  .gallery-pagination {
+    margin-bottom: 0;
   }
 
   .gallery-prev,
@@ -1180,6 +1185,10 @@ section {
   .footer-content {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
+  }
+
+  .gallery-pagination {
+    margin-bottom: 0;
   }
   
   .brand-section {
