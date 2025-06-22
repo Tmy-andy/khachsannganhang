@@ -705,7 +705,7 @@ section {
   .gallery-pagination {
     padding-left: 10px;
     padding-right:10px;
-    bottom: 20px;
+    top: 40px;
   }
 
   .gallery-prev,
