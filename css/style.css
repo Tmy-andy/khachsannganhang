@@ -699,10 +699,6 @@ section {
     flex-direction: column;
   }
 
-  .gallery-pagination {
-    margin-bottom: 50px;
-  }
-
   .gallery-prev,
   .gallery-next {
     order: 1;
@@ -1185,10 +1181,6 @@ section {
   .footer-content {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
-  }
-
-  .gallery-pagination {
-    margin-bottom: 0;
   }
   
   .brand-section {
