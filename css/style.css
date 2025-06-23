@@ -1447,7 +1447,7 @@ section {
       border-bottom-right-radius: 0;
     }
 
-    .room-col.vr-side image {
+    .room-col.vr-side img {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
