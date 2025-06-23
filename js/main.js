@@ -622,6 +622,53 @@ if (vrWrapper) {
   });
 }
 
+const vrSwiper = new Swiper(".vr-room-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 30,
+
+  // Tự động trượt mỗi 3 giây
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // Chuyển động mượt mà
+  speed: 800,
+
+  // Điều hướng bằng nút
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // Chấm tròn dưới (tùy chọn)
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Vuốt chạm (mobile)
+  simulateTouch: true,
+  grabCursor: true,
+});
+
+// Dừng autoplay khi hover vào section chứa Swiper
+// Lấy section chứa Swiper
+const vrRoomSection = document.querySelector(".vr-room-section");
+
+if (vrRoomSection && vrSwiper) {
+  vrRoomSection.addEventListener("mouseenter", () => {
+    console.log('mouseenter');
+    vrSwiper.autoplay.stop();
+    });
+
+    vrRoomSection.addEventListener("mouseleave", () => {
+    console.log('mouseleave');
+    vrSwiper.autoplay.start();
+    });
+}
+
 // Kiểm tra thiết bị di động
 // Nếu là thiết bị di động, tạm dừng autoplay mỗi 20 giây khi chạm vào section
 // và khởi động lại autoplay sau 20 giây
@@ -808,52 +855,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const vrSwiper = new Swiper(".vr-room-swiper", {
-      slidesPerView: 1,
-      loop: true,
-      spaceBetween: 30,
+  const vrSwiper = new Swiper(".vr-room-swiper", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
 
-      // Tự động trượt mỗi 3 giây
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+    // Tự động trượt mỗi 3 giây
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
 
-      // Chuyển động mượt mà
-      speed: 800,
+    // Chuyển động mượt mà
+    speed: 800,
 
-      // Điều hướng bằng nút
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+    // Điều hướng bằng nút
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-      // Chấm tròn dưới (tùy chọn)
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+    // Chấm tròn dưới (tùy chọn)
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
-      // Vuốt chạm (mobile)
-      simulateTouch: true,
-      grabCursor: true,
-    });
+    // Vuốt chạm (mobile)
+    simulateTouch: true,
+    grabCursor: true,
+  });
 
-    // Dừng autoplay khi hover vào section chứa Swiper
-    // Lấy section chứa Swiper
-    const vrRoomSection = document.querySelector(".vr-room-section");
+  // Dừng autoplay khi hover vào section chứa Swiper
+  // Lấy section chứa Swiper
+  const vrRoomSection = document.querySelector(".vr-room-section");
 
-    if (vrRoomSection && vrSwiper) {
-      vrRoomSection.addEventListener("mouseenter", () => {
-        console.log('mouseenter');
-        vrSwiper.autoplay.stop();
-        });
+  if (vrRoomSection && vrSwiper) {
+    vrRoomSection.addEventListener("mouseenter", () => {
+      console.log('mouseenter');
+      vrSwiper.autoplay.stop();
+      });
 
-        vrRoomSection.addEventListener("mouseleave", () => {
-        console.log('mouseleave');
-        vrSwiper.autoplay.start();
-        });
-    }
+      vrRoomSection.addEventListener("mouseleave", () => {
+      console.log('mouseleave');
+      vrSwiper.autoplay.start();
+      });
+  }
     // Toggle short and full text in room descriptions
     document.querySelectorAll('.toggle-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
