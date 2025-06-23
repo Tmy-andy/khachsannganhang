@@ -3,16 +3,16 @@
   "short_name": "Bank Hotel",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#730015",
+  "background_color": "#FFFFFF",
   "theme_color": "#730015",
   "icons": [
     {
-      "src": "images/logo/logo KSNH-gold.png",
+      "src": "images/Thumb.jpg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "images/logo/logo KSNH-gold.png",
+      "src": "images/Thumb.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
