@@ -1737,10 +1737,12 @@ html {
 
 /* Overlay cho ảnh VR-side */
 .vr-side {
+  position: relative;
   overflow: hidden;
 }
 
 .vr-side .vr-img-overlay {
+  position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   display: flex;
   align-items: center;
@@ -1751,7 +1753,8 @@ html {
   transition: opacity 0.3s;
   z-index: 2;
   pointer-events: none;
-  border-radius: 0.75rem;
+  margin: auto;
+  
 }
 
 .vr-side:hover .vr-img-overlay {
