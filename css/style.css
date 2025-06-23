@@ -1446,6 +1446,21 @@ section {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
+
+    .room-col.vr-side image {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+      border-radius: 0.75rem;
+      min-height: unset;
+      max-height: 100%;
+      background: #eee;
+      display: block;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
   .room-slide-wrapper {
     gap: 2px; /* hoặc 0 nếu muốn sát hẳn */
   }
