@@ -627,6 +627,8 @@ const vrSwiper = new Swiper(".vr-room-swiper", {
   loop: true,
   spaceBetween: 30,
 
+  
+
   // Tự động trượt mỗi 3 giây
   autoplay: {
     delay: 3000,
@@ -653,20 +655,25 @@ const vrSwiper = new Swiper(".vr-room-swiper", {
   grabCursor: true,
 });
 
+
 // Dừng autoplay khi hover vào section chứa Swiper
 // Lấy section chứa Swiper
 const vrRoomSection = document.querySelector(".vr-room-section");
 
 if (vrRoomSection && vrSwiper) {
-  vrRoomSection.addEventListener("mouseenter", () => {
-    console.log('mouseenter');
-    vrSwiper.autoplay.stop();
-    });
+  // Dừng autoplay khi hover (PC)
+  vrRoomSection.addEventListener("mouseenter", () => vrSwiper.autoplay.stop());
+  vrRoomSection.addEventListener("mouseleave", () => vrSwiper.autoplay.start());
 
-    vrRoomSection.addEventListener("mouseleave", () => {
-    console.log('mouseleave');
-    vrSwiper.autoplay.start();
-    });
+  // Dừng autoplay khi chạm (mobile)
+  let vrSwiperTimeout;
+  vrRoomSection.addEventListener("touchstart", () => {
+    vrSwiper.autoplay.stop();
+    clearTimeout(vrSwiperTimeout);
+    vrSwiperTimeout = setTimeout(() => {
+      vrSwiper.autoplay.start();
+    }, 20000); // 20 giây
+  });
 }
 
 // Kiểm tra thiết bị di động
